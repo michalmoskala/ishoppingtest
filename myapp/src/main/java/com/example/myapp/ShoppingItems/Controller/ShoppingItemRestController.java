@@ -1,4 +1,4 @@
-package com.pwr.shopping.shoppingitems.controller;
+package com.example.myapp.ShoppingItems.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
