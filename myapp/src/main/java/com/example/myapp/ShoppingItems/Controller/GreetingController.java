@@ -17,10 +17,10 @@ public class GreetingController {
         return new Greeting(counter.incrementAndGet(), String.format(template, name));
     }
 
-    private static final String template = "Hello, %s!";
+    private static final String template = "Henlo, %s!";
     private final AtomicLong counter = new AtomicLong();
 
-    @CrossOrigin(origins = "http://localhost:9000")
+    @CrossOrigin(origins = "*")
     @GetMapping("/api")
     public Greeting greeting(@RequestParam(required=false, defaultValue="World") String name) {
         System.out.println("==== in greeting ====");

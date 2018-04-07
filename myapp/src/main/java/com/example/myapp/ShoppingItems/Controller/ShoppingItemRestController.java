@@ -58,7 +58,7 @@ public class ShoppingItemRestController {
         return new WebMvcConfigurerAdapter() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/greeting-javaconfig").allowedOrigins("http://localhost:9000");
+                registry.addMapping("/greeting-javaconfig").allowedOrigins("*");
             }
         };
     }
@@ -76,7 +76,7 @@ public class ShoppingItemRestController {
 
     @RequestMapping(path="/greeting",method= RequestMethod.GET)
     public String helloWorld(){
-        return "Hello world!";
+        return "Heo world!";
     }
 
 }

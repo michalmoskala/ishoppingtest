@@ -12,7 +12,7 @@ public class DemoApplication {
     @RequestMapping("/")
     @ResponseBody
     String home() {
-      return "Sirotkin jest lepszy od kubicy";
+      return "Sirotsskin jest lepszy od kubicy";
     }
 
     public static void main(String[] args) {
