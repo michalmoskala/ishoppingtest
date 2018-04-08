@@ -1,7 +1,5 @@
 package com.example.myapp.ShoppingLists.Repository.Entity;
 
-import com.example.myapp.Product;
-
 import java.util.ArrayList;
 
 public class ShoppingListEntity {
@@ -11,9 +9,9 @@ public class ShoppingListEntity {
     private final String name;
     private final boolean isDeleted;
     private final String date;
-    private final ArrayList<Product> products;
+    private final ArrayList<ProductEntity> products;
 
-    public ShoppingListEntity(long id, long groupId, String name, boolean isDeleted, String date, ArrayList<Product> products) {
+    public ShoppingListEntity(long id, long groupId, String name, boolean isDeleted, String date, ArrayList<ProductEntity> products) {
         this.id = id;
         this.groupId = groupId;
         this.name = name;
@@ -43,7 +41,7 @@ public class ShoppingListEntity {
         return date;
     }
 
-    public ArrayList<Product> getProducts() {
+    public ArrayList<ProductEntity> getProducts() {
         return products;
     }
 }
