@@ -10,7 +10,7 @@ public class UsersRestController {
 
 
     @GetMapping("/{id}")
-    public UserEntity user(@PathVariable long id) {
+    public UserEntity userEntity(@PathVariable long id) {
         System.out.println("==== in greeting ====");
         return new UserEntity(id,"mihu","m@m.c","admin1");
     }

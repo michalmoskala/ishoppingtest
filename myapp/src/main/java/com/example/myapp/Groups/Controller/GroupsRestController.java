@@ -14,7 +14,7 @@ import java.util.Date;
 public class GroupsRestController {
 
     @GetMapping("/{id}")
-    public GroupEntity user(@PathVariable long id) {
+    public GroupEntity groupEntity(@PathVariable long id) {
         return new GroupEntity(id,1,"name",false, new Date());
     }
 
