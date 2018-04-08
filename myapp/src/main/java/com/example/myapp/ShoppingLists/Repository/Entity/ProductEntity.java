@@ -1,5 +1,7 @@
 package com.example.myapp.ShoppingLists.Repository.Entity;
 
+import java.util.Date;
+
 public class ProductEntity {
     private final long id;
     private final long groupId;
@@ -10,9 +12,9 @@ public class ProductEntity {
     private final double quantity;
     private final Boolean checked;
     private final Boolean isDeleted;
-    private final String lastModified;
+    private final Date lastModified;
 
-    public ProductEntity(long id, long groupId, long shoppingListId, long categoryId, String name, String unit, double quantity, Boolean checked, Boolean isDeleted, String lastModified) {
+    public ProductEntity(long id, long groupId, long shoppingListId, long categoryId, String name, String unit, double quantity, Boolean checked, Boolean isDeleted, Date lastModified) {
         this.id = id;
         this.groupId = groupId;
         this.shoppingListId = shoppingListId;
@@ -61,7 +63,7 @@ public class ProductEntity {
         return isDeleted;
     }
 
-    public String getLastModified() {
+    public Date getLastModified() {
         return lastModified;
     }
 }
