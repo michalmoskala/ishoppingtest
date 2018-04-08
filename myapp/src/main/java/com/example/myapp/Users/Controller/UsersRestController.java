@@ -22,7 +22,7 @@ public class UsersRestController {
     private static final String template = "Henlo, %s!";
     private final AtomicLong counter = new AtomicLong();
 
-    @CrossOrigin(origins = "https://ishopping-beta.firebaseapp.com")
+    //@CrossOrigin(origins = "https://ishopping-beta.firebaseapp.com")
     @GetMapping("/users")
     public User user(@RequestParam(required=true) int id) {
         System.out.println("==== in greeting ====");
