@@ -20,7 +20,7 @@ public class GreetingController {
     private static final String template = "Henlo, %s!";
     private final AtomicLong counter = new AtomicLong();
 
-    @CrossOrigin(origins = "https://ishopping-beta.firebaseapp.com")
+    //@CrossOrigin(origins = "https://ishopping-beta.firebaseapp.com")
     @GetMapping("/api")
     public Greeting greeting(@RequestParam(required=false, defaultValue="World") String name) {
         System.out.println("==== in greeting ====");
