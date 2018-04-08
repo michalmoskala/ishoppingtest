@@ -5,12 +5,10 @@ import java.util.concurrent.atomic.AtomicLong;
 import com.example.myapp.Greeting;
 import com.example.myapp.Users.User;
 import com.sun.corba.se.spi.presentation.rmi.IDLNameTranslator;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping("/users")
 public class UsersRestController {
 //
 //    @GetMapping("/users-javaconfig")
@@ -20,8 +18,7 @@ public class UsersRestController {
 //    }
 
 
-    //@CrossOrigin(origins = "https://ishopping-beta.firebaseapp.com")
-    @GetMapping("/users")
+    @GetMapping("/{id}")
     public User user(@RequestParam(required=true) int id) {
         System.out.println("==== in greeting ====");
         return new User(id,"mihu","m@m.c","admin1");
