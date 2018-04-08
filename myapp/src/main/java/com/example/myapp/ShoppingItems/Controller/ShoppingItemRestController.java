@@ -76,7 +76,7 @@ public class ShoppingItemRestController {
 
     @RequestMapping(path="/greeting",method= RequestMethod.GET)
     public String helloWorld(){
-        return "Heo world!";
+        return "Hennnlo world!";
     }
 
 }
