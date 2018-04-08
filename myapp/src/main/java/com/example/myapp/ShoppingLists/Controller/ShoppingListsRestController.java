@@ -17,12 +17,14 @@ public class ShoppingListsRestController {
     public ShoppingListEntity ShoppingListEntity(@PathVariable long id) {
 
         ArrayList<ProductEntity> abc = new ArrayList<>();
-        abc.add(new ProductEntity(1,1,id,1,"maka","kg",2,true,false, new Date()));
-        abc.add(new ProductEntity(2,1,id,1,"cukier","kg",3,true,false,new Date(300)));
-        abc.add(new ProductEntity(3,1,id,1,"sul","kg",4,true,false,new Date(2001,10,10)));
+        abc.add(new ProductEntity(1,1,id,4,"Ziemniaki","kg",1.5,true,false, new Date()));
+        abc.add(new ProductEntity(2,1,id,3,"Ketchup","szt.",1,true,false,new Date(300)));
+        abc.add(new ProductEntity(3,1,id,1,"Ser Gouda","kg",0.2,false,false,new Date(2001,10,10)));
+        abc.add(new ProductEntity(4,1,id,1,"Mleko","l",1,true,false,new Date()));
+        abc.add(new ProductEntity(5,1,id,2,"Cisowianka Niegazowana","l",1.5,false,false,new Date(0)));
 
 
-        return new ShoppingListEntity(id,1,"lista",false,new Date(), abc);
+        return new ShoppingListEntity(id,1,"Moja Lista Zakupow",false,new Date(), abc);
     }
 
 }
