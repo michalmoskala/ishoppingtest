@@ -22,7 +22,7 @@ public class ShoppingListsRestController {
         abc.add(new ProductEntity(3,1,id,1,"sul","kg",4,true,false,new Date(2001,10,10)));
 
 
-        return new ShoppingListEntity(id,1,"lista",false,"2001-09-11",abc);
+        return new ShoppingListEntity(id,1,"lista",false,new Date(), abc);
     }
 
 }
