@@ -3,23 +3,31 @@ package com.example.myapp.Users;
 public class User {
 
     private final long id;
-    private final String content;
+    private final String login;
+    private final String email;
+    private final String password;
 
-    public User() {
-        this.id = -1;
-        this.content = "";
-    }
-
-    public User(long id, String content) {
+    public User(long id, String login, String email, String password) {
         this.id = id;
-        this.content = content;
+        this.login = login;
+        this.email = email;
+        this.password = password;
     }
 
     public long getId() {
         return id;
     }
 
-    public String getContent() {
-        return content;
+    public String getLogin() {
+        return login;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPassword() {
+        return password;
     }
 }
+
