@@ -19,7 +19,7 @@ public class UsersRestController {
 
 
     @GetMapping("/{id}")
-    public User user(@RequestParam(required=true) int id) {
+    public User user(@PathVariable int id) {
         System.out.println("==== in greeting ====");
         return new User(id,"mihu","m@m.c","admin1");
     }
