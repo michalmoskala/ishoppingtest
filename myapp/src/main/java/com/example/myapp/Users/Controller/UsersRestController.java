@@ -12,15 +12,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class UsersRestController {
+//
+//    @GetMapping("/users-javaconfig")
+//    public Greeting usersWithJavaconfig(@RequestParam(required=false, defaultValue="World") String name) {
+//        System.out.println("==== in greeting ====");
+//        return new Greeting(counter.incrementAndGet(), String.format(template, name));
+//    }
 
-    @GetMapping("/users-javaconfig")
-    public Greeting usersWithJavaconfig(@RequestParam(required=false, defaultValue="World") String name) {
-        System.out.println("==== in greeting ====");
-        return new Greeting(counter.incrementAndGet(), String.format(template, name));
-    }
-
-    private static final String template = "Henlo, %s!";
-    private final AtomicLong counter = new AtomicLong();
 
     //@CrossOrigin(origins = "https://ishopping-beta.firebaseapp.com")
     @GetMapping("/users")
