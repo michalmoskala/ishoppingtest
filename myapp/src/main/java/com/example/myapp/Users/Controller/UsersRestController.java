@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class UsersRestController {
 
-    @GetMapping("/greeting-javaconfig")
-    public Greeting greetingWithJavaconfig(@RequestParam(required=false, defaultValue="World") String name) {
+    @GetMapping("/users-javaconfig")
+    public Greeting usersWithJavaconfig(@RequestParam(required=false, defaultValue="World") String name) {
         System.out.println("==== in greeting ====");
         return new Greeting(counter.incrementAndGet(), String.format(template, name));
     }
