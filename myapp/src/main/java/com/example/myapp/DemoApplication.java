@@ -15,21 +15,21 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 public class DemoApplication {
 
 
-//    @Bean
-//    public WebMvcConfigurer corsConfigurer() {
-//        return new WebMvcConfigurerAdapter() {
-//            @Override
-//            public void addCorsMappings(CorsRegistry registry) {
-//                registry.addMapping("/**")
-//                .allowedOrigins("*")
-//                        .allowedMethods("*")
-//                        .allowedHeaders("*")
-//                        .exposedHeaders("*")
-//                        .allowCredentials(true).maxAge(3600);
-//
-//            }
-//        };
-//    }
+    @Bean
+    public WebMvcConfigurer corsConfigurer() {
+        return new WebMvcConfigurerAdapter() {
+            @Override
+            public void addCorsMappings(CorsRegistry registry) {
+                registry.addMapping("/**")
+                .allowedOrigins("*")
+                        .allowedMethods("*")
+                        .allowedHeaders("*")
+                        .exposedHeaders("*")
+                        .allowCredentials(true).maxAge(3600);
+
+            }
+        };
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
