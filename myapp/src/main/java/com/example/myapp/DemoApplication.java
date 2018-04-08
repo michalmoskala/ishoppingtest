@@ -9,11 +9,11 @@ import org.springframework.stereotype.*;
 @SpringBootApplication
 public class DemoApplication {
 
-    @RequestMapping("/")
-    @ResponseBody
-    String home() {
-      return "Sirotsskin jest lepszy od kubicy";
-    }
+//    @RequestMapping("/")
+//    @ResponseBody
+//    String home() {
+//      return "Sirotsskin jest lepszy od kubicy";
+//    }
 
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
