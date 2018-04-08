@@ -1,13 +1,13 @@
-package com.example.myapp.Users;
+package com.example.myapp.Users.Repository.Entity;
 
-public class User {
+public class UserEntity {
 
     private final long id;
     private final String login;
     private final String email;
     private final String password;
 
-    public User(long id, String login, String email, String password) {
+    public UserEntity(long id, String login, String email, String password) {
         this.id = id;
         this.login = login;
         this.email = email;

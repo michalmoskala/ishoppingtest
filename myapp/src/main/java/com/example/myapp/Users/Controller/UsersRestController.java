@@ -1,7 +1,7 @@
 package com.example.myapp.Users.Controller;
 
 
-import com.example.myapp.Users.User;
+import com.example.myapp.Users.Repository.Entity.UserEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -10,9 +10,9 @@ public class UsersRestController {
 
 
     @GetMapping("/{id}")
-    public User user(@PathVariable int id) {
+    public UserEntity user(@PathVariable long id) {
         System.out.println("==== in greeting ====");
-        return new User(id,"mihu","m@m.c","admin1");
+        return new UserEntity(id,"mihu","m@m.c","admin1");
     }
 
 }
