@@ -58,7 +58,7 @@ public class ShoppingItemRestController {
         return new WebMvcConfigurerAdapter() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/greeting-javaconfig").allowedOrigins("*");
+                registry.addMapping("/greeting-javaconfig").allowedOrigins("https://ishopping-beta.firebaseapp.com/*");
             }
         };
     }
